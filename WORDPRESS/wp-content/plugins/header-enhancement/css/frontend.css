@@ -1,0 +1,13 @@
+/* For browsers that support 'object-fit' */
+@media screen and ( max-width:900px ) {
+	@supports ( object-fit: cover ) {
+		.custom-header-media iframe {
+			-o-object-fit: fill !important;
+			object-fit: fill !important;
+		}
+	}
+}
+
+.custom-header:hover .wp-custom-header-video-button {
+	z-index: 4;
+}

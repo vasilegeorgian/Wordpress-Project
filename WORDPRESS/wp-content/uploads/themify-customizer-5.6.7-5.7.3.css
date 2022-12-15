@@ -1,0 +1,27 @@
+/* Themify Customize Styling */
+body #site-logo a img {		width: 85px;
+	height: 55px; 
+}
+#site-logo {		position:static;
+ 
+}
+@media screen and (max-width: 1280px) { /* Themify Customize Styling */
+body #site-logo a img {		width: 85px;
+	height: 55px; 
+}
+ }@media screen and (max-width: 768px) { /* Themify Customize Styling */
+body #site-logo a img {		width: 85px;
+	height: 55px; 
+}
+ }@media screen and (max-width: 680px) { /* Themify Customize Styling */
+body #site-logo a img {		width: 80px;
+	height: 50px; 
+}
+#site-logo {	
+	margin-top: 8px; 
+}
+ }
+/* Themify Custom CSS */
+#footer-logo{
+display: none;
+}

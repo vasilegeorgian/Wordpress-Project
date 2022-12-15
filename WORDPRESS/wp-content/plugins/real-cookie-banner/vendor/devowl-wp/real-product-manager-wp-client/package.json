@@ -1,0 +1,192 @@
+{
+    "name": "@devowl-wp/real-product-manager-wp-client",
+    "version": "1.14.0",
+    "private": true,
+    "description": "A WordPress client for Real Product Manager",
+    "homepage": "https://devowl.io",
+    "license": "GPL-3.0-or-later",
+    "author": "DevOwl",
+    "sideEffects": [
+        "**/*.{css,scss,less}",
+        "./src/public/ts/*.tsx"
+    ],
+    "main": "lib/index.tsx",
+    "files": [
+        "dist",
+        "dev",
+        "languages/frontend"
+    ],
+    "scripts": {
+        "bootstrap": "while ! composer install --prefer-dist; do rm -rf vendor; done;",
+        "build": "dowl run grunt @devowl-wp/utils/package:build",
+        "build:js:development": "dowl run grunt @devowl-wp/utils/webpack:build:development",
+        "build:js:production": "dowl run grunt @devowl-wp/utils/webpack:build:production",
+        "dev": "dowl run grunt @devowl-wp/utils/dev",
+        "grunt": "TS_NODE_TRANSPILE_ONLY=true grunt --gruntfile scripts/Gruntfile.ts --base .",
+        "i18n:generate:backend": "dowl run grunt @devowl-wp/utils/i18n:make-backend-pot",
+        "i18n:generate:frontend": "dowl run grunt @devowl-wp/utils/i18n:make-frontend-pot",
+        "jest": "TS_NODE_TRANSPILE_ONLY=true jest --config test/jest.config.js --rootDir .",
+        "lint:eslint": "dowl run grunt @devowl-wp/eslint-config/eslint",
+        "lint:phpcs": "dowl run grunt @devowl-wp/phpcs-config/run",
+        "phpunit": "./vendor/bin/phpunit --prepend test/phpunit.xdebug.php --config test/phpunit.xml",
+        "test": "dowl run grunt @devowl-wp/grunt-workspaces/run-package-script-children:test",
+        "test:jest": "dowl run grunt @devowl-wp/utils/jest:run",
+        "test:jest:coverage": "dowl run grunt @devowl-wp/utils/jest:coverage",
+        "test:phpunit": "dowl run grunt @devowl-wp/phpunit-config/run",
+        "test:phpunit:coverage": "dowl run grunt @devowl-wp/phpunit-config/coverage",
+        "webpack": "TS_NODE_TRANSPILE_ONLY=true webpack --config ./scripts/webpack.config.ts",
+        "wp": "$(which wp)$(test $CI && echo ' --allow-root')",
+        "wp:weak": "php -n -dextension=phar.so -dextension=json.so -dextension=mbstring.so -dextension=tokenizer.so -dmemory_limit=-1 $(which wp)$(test $CI && echo ' --allow-root')"
+    },
+    "babel": {
+        "assumptions": {
+            "setPublicClassFields": true
+        },
+        "plugins": [
+            [
+                "@babel/plugin-transform-runtime",
+                {}
+            ],
+            [
+                "@babel/plugin-proposal-decorators",
+                {
+                    "legacy": true
+                }
+            ]
+        ],
+        "presets": [
+            "@babel/preset-typescript",
+            [
+                "@babel/preset-env",
+                {
+                    "useBuiltIns": "entry",
+                    "corejs": 3
+                }
+            ],
+            "@babel/preset-react"
+        ],
+        "sourceMaps": true
+    },
+    "browserslist": [
+        "defaults",
+        "not IE 11"
+    ],
+    "eslintConfig": {
+        "extends": [
+            "./node_modules/@devowl-wp/eslint-config/src/.eslintrc"
+        ]
+    },
+    "eslintIgnore": [
+        "dist",
+        "dev",
+        "docs",
+        "coverage",
+        "node_modules",
+        "vendor"
+    ],
+    "dependencies": {
+        "@ant-design/icons": "~4.6.2",
+        "antd": "~4.15.5",
+        "mobx": "~4.15.7",
+        "mobx-react": "~6.3.1",
+        "react": "~16.14.0",
+        "react-dom": "~16.14.0"
+    },
+    "devDependencies": {
+        "@devowl-wp/composer-licenses": "^0.1.8",
+        "@devowl-wp/continuous-integration": "^0.2.5",
+        "@devowl-wp/eslint-config": "^0.1.8",
+        "@devowl-wp/grunt-continuous-localization": "^0.4.8",
+        "@devowl-wp/grunt-workspaces": "^0.2.5",
+        "@devowl-wp/node-gitlab-ci": "^0.5.4",
+        "@devowl-wp/npm-licenses": "^0.1.8",
+        "@devowl-wp/phpcs-config": "^0.1.5",
+        "@devowl-wp/phpunit-config": "^0.1.5",
+        "@devowl-wp/ts-config": "^0.1.6",
+        "@devowl-wp/utils": "^1.12.25",
+        "@devowl-wp/webpack-config": "^0.2.6",
+        "@types/grunt": "~0.4.25",
+        "@types/jest": "~26.0.23",
+        "@types/react": "~16.14.6",
+        "@types/react-dom": "~16.9.12",
+        "dotenv": "~9.0.2",
+        "grunt": "~1.4.0",
+        "grunt-cli": "~1.4.2",
+        "jest": "~26.6.3",
+        "ts-node": "~10.9.1",
+        "tslib": "^2.4.0",
+        "typescript": "~4.2.4",
+        "webpack": "~5.74.0",
+        "webpack-cli": "~4.10.0"
+    },
+    "peerDependencies": {
+        "@devowl-wp/grunt-workspaces": "^0.1.0",
+        "@devowl-wp/utils": "~1.4.4",
+        "mobx": "*",
+        "react": "*",
+        "react-dom": "*"
+    },
+    "engines": {
+        "node": ">=14.15.0"
+    },
+    "continuous-localization": {
+        "locales": {
+            "de_AT": false,
+            "de_DE": "de",
+            "de_DE_formal": "de@formal",
+            "de_CH": false,
+            "de_CH_informal": false,
+            "hu_HU": "hu",
+            "ru_RU": "ru"
+        },
+        "copy-files": {
+            "de_DE.(po)$": [
+                "de_AT.$1",
+                "de_CH.$1",
+                "de_CH_informal.$1"
+            ],
+            "de@formal.(po)$": [
+                "de_DE_formal.$1"
+            ]
+        },
+        "projects": {
+            "backend": {
+                "name": "@devowl-wp/real-product-manager-wp-client (Backend, PHP)",
+                "system": "weblate",
+                "sourceFolder": "src",
+                "languageFolder": "languages/backend"
+            },
+            "frontend": {
+                "name": "@devowl-wp/real-product-manager-wp-client (Frontend, JavaScript)",
+                "system": "weblate",
+                "sourceFolder": "lib",
+                "languageFolder": "languages/frontend"
+            }
+        }
+    },
+    "license-check": {
+        "spdx": [
+            "MIT",
+            "ISC",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "Apache-2.0",
+            "Artistic-2.0",
+            "WTFPL",
+            "CC-0",
+            "CC0-1.0",
+            "MPL-2.0",
+            "ZLib",
+            "Unlicense",
+            "GPL-2.0",
+            "GPL-2.0-or-later",
+            "GPL-3",
+            "GPL-3.0-or-later",
+            "LGPL-3.0-or-later"
+        ],
+        "packages": [
+            "ignore-packages-here@1.0.0"
+        ]
+    },
+    "phpunit-coverage-threshold": 80
+}

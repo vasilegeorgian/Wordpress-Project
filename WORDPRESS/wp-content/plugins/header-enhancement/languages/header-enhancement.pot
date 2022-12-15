@@ -1,0 +1,342 @@
+# Copyright (C) 2018-2022 Catch Plugins
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Header Enhancement\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2022-11-19 15:46-0800\n"
+"PO-Revision-Date: 2016-12-12 09:23-0500\n"
+"Last-Translator: Sakin Shrestha <info@catchplugins.com>\n"
+"Language-Team: Catch Plugins <info@catchplugins.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;esc_attr_e;esc_attr__;_nx;_x;"
+"esc_html_e;esc_html__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_n_noop:1,2;"
+"__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../header-enhancement.php:36
+#, php-format
+msgid ""
+"Sorry, Pro version is already active. No need to activate Free version. "
+"If you still want to activate the Free version, please deactivate the Pro "
+"version first. %1$s&laquo; Return to Plugins%2$s."
+msgstr ""
+
+#: ../header-enhancement.php:97 ../header-enhancement.php:98
+#: ../partials/header-enhancement-display.php:17
+msgid "Header Enhancement"
+msgstr ""
+
+#: ../header-enhancement.php:110
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: ../partials/CatchThemesThemePlugin.php:154
+msgid "Themes by CatchThemes"
+msgstr ""
+
+#: ../partials/CatchThemesThemePlugin.php:434
+msgctxt "Plugin Installer"
+msgid "Catch Plugins"
+msgstr ""
+
+#: ../partials/CatchThemesThemePlugin.php:473
+#, php-format
+msgid ""
+"You can use any of our free plugins or premium plugins from <a href=\"%s"
+"\" target=\"_blank\">Catch Plugins</a>"
+msgstr ""
+
+#: ../partials/ctp-tabs-removal.php:59
+msgid "Invalid Nonce"
+msgstr ""
+
+#: ../partials/ctp-tabs-removal.php:62
+msgid "Permission denied!"
+msgstr ""
+
+#: ../partials/ctp-tabs-removal.php:75
+msgid "Connection Error. Please try again."
+msgstr ""
+
+#: ../partials/display-dashboard.php:19
+#: ../partials/header-enhancement-display.php:25
+msgid "Dashboard"
+msgstr ""
+
+#: ../partials/display-dashboard.php:22
+msgid ""
+"Header Enhancement is a simple yet extremely handy WordPress plugin to "
+"enhance your custom header video. The plugin is for those who’re trying "
+"to showcase the best in their header section with their communicative "
+"videos. It is completely free of cost and comes with powerful features. "
+"With the plugin installed and activated, you can easily add the video you "
+"want in your header and that too with sound effects. Also, not to forget, "
+"your header video will be displayed elegantly on mobile devices as well. "
+"A header video with sound and full support for small screen sizes, what "
+"more could you ask for? Set a header image, just for a backup if "
+"something goes wrong with your header video at times. Flaunt the best in "
+"you through your expressive header video and make your website of any "
+"kind engaging. The features you would get in Header Enhancement are Sound "
+"Support and Mobile Friendliness - features your header video needs to "
+"catch the visitors’ eyes. You can either upload your local video or paste "
+"the YouTube URL of the video. Either way, your header video will be "
+"displayed elegantly across all screen sizes, even on the mobile devices."
+msgstr ""
+
+#: ../partials/display-dashboard.php:31
+msgid "Here"
+msgstr ""
+
+#: ../partials/display-dashboard.php:34
+msgid "You can add Header Video from the link"
+msgstr ""
+
+#: ../partials/footer.php:4
+msgid "Catch Plugins"
+msgstr ""
+
+#: ../partials/footer.php:9
+msgid "View Themes"
+msgstr ""
+
+#: ../partials/footer.php:10
+msgid "View Plugins"
+msgstr ""
+
+#: ../partials/footer.php:11
+msgid "Support"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:19
+msgid ""
+"Header Enhancement allows you to add an expressive custom header video on "
+"your website with features like mobile compatibility and sound effects."
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:26
+#: ../partials/header-enhancement-display.php:107
+#: ../partials/header-enhancement-display.php:151
+msgid "Features"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:27
+#: ../partials/header-enhancement-display.php:144
+msgid "Compare Table"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:36
+msgid "Catch Themes & Catch Plugins Tabs"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:41
+msgid ""
+"If you want to turn off Catch Themes & Catch Plugins tabs option in Add "
+"Themes and Add Plugins page, please uncheck the following option."
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:46
+msgid "Turn On Catch Themes & Catch Plugin tabs"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:67
+msgid "Go Premium!"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:72
+msgid "Dismiss this item."
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:76 ../partials/sidebar.php:9
+msgid "Toggle autoplay"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:77 ../partials/sidebar.php:10
+msgid "Toggle sound"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:78 ../partials/sidebar.php:11
+msgid "Toogle loop"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:79 ../partials/sidebar.php:12
+msgid "Toggle display on small devices"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:80
+#: ../partials/header-enhancement-display.php:232 ../partials/sidebar.php:13
+msgid "Max video size upto 500MB"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:83 ../partials/sidebar.php:15
+msgid "Find out why you should upgrade to Header Enhancement Premium »"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:90
+msgid "Pro Screenshot"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:113
+#: ../partials/header-enhancement-display.php:168
+msgid "Lightweight"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:114
+msgid ""
+"It is extremely lightweight. You do not need to worry about it affecting "
+"the space and speed of your website."
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:118
+msgid "Responsive Design"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:119
+msgid ""
+"One of the key features of our plugins is that your website will "
+"magically respond and adapt to different screen sizes delivering an "
+"optimized design for iPhones, iPads, and other mobile devices. No longer "
+"will you need to zoom and scroll around when browsing on your mobile "
+"phone."
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:123
+#: ../partials/header-enhancement-display.php:192
+msgid "Compatible with all WordPress Themes that Supports Header Media"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:124
+msgid ""
+"Our new Header Enhancement plugin has been crafted in a way that supports "
+"all the WordPress themes that includes the Header Media feature. Also, "
+"the plugin is completely compatible with Gutenberg as well."
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:128
+msgid "Incredible Support"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:129
+msgid ""
+"We have a great line of support team and support documentation. You do "
+"not need to worry about how to use the plugins we provide, just refer to "
+"our Tech Support Forum. Further, if you need to do advanced customization "
+"to your website, you can always hire our theme customizer!"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:139
+msgid "Get Header Enhancement Pro -"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:139
+msgid "Get It Here!"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:152
+msgid "Free"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:153
+msgid "Pro"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:160
+msgid "Super Easy Setup"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:176
+msgid "Sound in header video"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:184
+msgid "Header video on small devices"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:200
+msgid "Toggle Autoplay"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:208
+msgid "Toggle Sound"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:216
+msgid "Toggle Loop"
+msgstr ""
+
+#: ../partials/header-enhancement-display.php:224
+msgid "Toogle display on small devices"
+msgstr ""
+
+#: ../partials/sidebar.php:3
+msgid "Recommendations"
+msgstr ""
+
+#: ../partials/sidebar.php:7
+msgid "Get Header Enhancement Pro"
+msgstr ""
+
+#: ../partials/sidebar.php:22
+msgid "Premium Themes"
+msgstr ""
+
+#: ../partials/sidebar.php:23
+msgid ""
+"Check out our simple, clean and responsive Premium WordPress Themes that "
+"come with an array of crucial features with a superior functionality."
+msgstr ""
+
+#: ../partials/sidebar.php:23
+msgid "Check our premium themes."
+msgstr ""
+
+#: ../partials/sidebar.php:30
+msgid "Free Themes"
+msgstr ""
+
+#: ../partials/sidebar.php:31
+msgid ""
+"Check out our collection of Free WordPress Themes that are clean, simple "
+"and feature-rich."
+msgstr ""
+
+#: ../partials/sidebar.php:31
+msgid "Check our free themes."
+msgstr ""
+
+#: ../partials/sidebar.php:39
+msgid "Premium Plugins"
+msgstr ""
+
+#: ../partials/sidebar.php:40
+msgid ""
+"Check out our secured Premium WordPress Plugins to enhance and add extra "
+"functionalities to your website. An exceptional way to get the most out "
+"of WordPress!"
+msgstr ""
+
+#: ../partials/sidebar.php:40
+msgid "Check our premium plugins."
+msgstr ""
+
+#: ../partials/sidebar.php:48
+msgid "Free Plugins"
+msgstr ""
+
+#: ../partials/sidebar.php:49
+msgid ""
+"Check out our Free WordPress Plugins and get the taste of our service "
+"without affecting your wallet."
+msgstr ""
+
+#: ../partials/sidebar.php:50
+msgid "check our free plugins."
+msgstr ""

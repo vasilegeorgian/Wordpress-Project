@@ -1,0 +1,91 @@
+{
+    "name": "@devowl-wp/fast-html-tag",
+    "version": "0.5.1",
+    "private": true,
+    "description": "Find tags within HTML content and modify it in speed of light",
+    "homepage": "https://devowl.io",
+    "license": "GPL-3.0-or-later",
+    "author": "DevOwl",
+    "sideEffects": [
+        "**/*.{css,scss,less}",
+        "./src/public/ts/*.tsx"
+    ],
+    "main": "lib/index.tsx",
+    "files": [
+        "dist",
+        "dev"
+    ],
+    "scripts": {
+        "bootstrap": "while ! composer install --prefer-dist; do rm -rf vendor; done;",
+        "grunt": "TS_NODE_TRANSPILE_ONLY=true grunt --gruntfile scripts/Gruntfile.ts --base .",
+        "lint:eslint": "dowl run grunt @devowl-wp/eslint-config/eslint",
+        "lint:phpcs": "dowl run grunt @devowl-wp/phpcs-config/run",
+        "phpunit": "./vendor/bin/phpunit --prepend test/phpunit.xdebug.php --config test/phpunit.xml",
+        "test": "dowl run grunt @devowl-wp/grunt-workspaces/run-package-script-children:test",
+        "test:phpunit": "dowl run grunt @devowl-wp/phpunit-config/run",
+        "test:phpunit:coverage": "dowl run grunt @devowl-wp/phpunit-config/coverage"
+    },
+    "eslintConfig": {
+        "extends": [
+            "./node_modules/@devowl-wp/eslint-config/src/.eslintrc"
+        ]
+    },
+    "eslintIgnore": [
+        "dist",
+        "dev",
+        "docs",
+        "coverage",
+        "node_modules",
+        "vendor"
+    ],
+    "devDependencies": {
+        "@devowl-wp/composer-licenses": "^0.1.8",
+        "@devowl-wp/continuous-integration": "^0.2.5",
+        "@devowl-wp/eslint-config": "^0.1.8",
+        "@devowl-wp/grunt-workspaces": "^0.2.5",
+        "@devowl-wp/node-gitlab-ci": "^0.5.4",
+        "@devowl-wp/npm-licenses": "^0.1.8",
+        "@devowl-wp/phpcs-config": "^0.1.5",
+        "@devowl-wp/phpunit-config": "^0.1.5",
+        "@devowl-wp/ts-config": "^0.1.6",
+        "@types/grunt": "~0.4.25",
+        "dotenv": "~9.0.2",
+        "grunt": "~1.4.0",
+        "grunt-cli": "~1.4.2",
+        "ts-node": "~10.9.1",
+        "tslib": "^2.4.0",
+        "typescript": "~4.2.4",
+        "webpack-cli": "~4.10.0"
+    },
+    "peerDependencies": {
+        "@devowl-wp/grunt-workspaces": "^0.1.0"
+    },
+    "engines": {
+        "node": ">=14.15.0"
+    },
+    "license-check": {
+        "spdx": [
+            "MIT",
+            "ISC",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "Apache-2.0",
+            "Artistic-2.0",
+            "WTFPL",
+            "CC-0",
+            "CC0-1.0",
+            "MPL-2.0",
+            "ZLib",
+            "Unlicense",
+            "GPL-2.0",
+            "GPL-2.0-or-later",
+            "GPL-3",
+            "GPL-3.0-or-later",
+            "LGPL-3.0-or-later"
+        ],
+        "packages": [
+            "ignore-packages-here@1.0.0"
+        ]
+    },
+    "phpunit-coverage-threshold": 80
+}

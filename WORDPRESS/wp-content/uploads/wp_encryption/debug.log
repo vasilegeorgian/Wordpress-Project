@@ -1,0 +1,12 @@
+<b>5.8.2  SINGLE DOMAIN SSL 0 - http://sticker-shop.hyperphp.com</b>
+Domain covered:
+["sticker-shop.hyperphp.com","www.sticker-shop.hyperphp.com"]
+
+[28-11-2022 10:27:35] :
+LEClient finished constructing
+
+[28-11-2022 10:27:36] :
+Order object is {"status":"pending","expires":"2022-11-30T10:37:31Z","identifiers":[{"type":"dns","value":"sticker-shop.hyperphp.com"},{"type":"dns","value":"www.sticker-shop.hyperphp.com"}],"authorizations":["https:\/\/acme-v02.api.letsencrypt.org\/acme\/authz-v3\/179536076487","https:\/\/acme-v02.api.letsencrypt.org\/acme\/authz-v3\/179536076497"],"finalize":"https:\/\/acme-v02.api.letsencrypt.org\/acme\/finalize\/837702597\/146753911447"}
+
+Offering manual verification procedure. 
+

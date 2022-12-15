@@ -1,0 +1,20 @@
+2022-11-29T14:14:46+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) în /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-admin/includes/admin-filters.php pe linia 90
+
+2022-11-29T15:19:35+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 524288 bytes) în /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/i18n/states.php pe linia 904
+
+2022-11-29T15:40:32+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php on line 333
+
+2022-11-29T15:48:45+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/i18n/states.php on line 1630
+
+2022-11-29T16:01:24+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 65536 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/src/Admin/API/Reports/Categories/DataStore.php on line 303
+
+2022-11-29T18:34:54+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/i18n/states.php on line 1153
+
+2022-11-29T18:42:11+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/i18n/states.php on line 1311
+
+2022-11-29T19:15:00+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 40960 bytes) în /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-includes/class-wp-scripts.php pe linia 523
+
+2022-11-29T19:38:01+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/i18n/states.php on line 1782
+
+2022-11-29T22:37:51+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/vol5_6/hyperphp.com/hp_33059250/htdocs/wp-content/plugins/woocommerce/i18n/states.php on line 1938
+
